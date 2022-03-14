@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleando</title> 
+    <br>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #columnas{
+            column-count:3;
+            column-gap:20px;
+            column-rule:4px outset rgb(92, 89, 64);
+                }
+
+         #columnas2{
+            column-count:3;
+            column-gap:20px;
+            column-rule:3px ;
+                }    
+                
+      
+                
+
+    </style>
+</head>
+<body>
+    <div style="background-color: rgb(255, 164, 191); color: rgb(67, 55, 41);">
+    <img style="float:left;" src="https://raw.githubusercontent.com/LuzMMartinezS/html/main/pasteleando.png" alt="Logo pastelería" width="160px" > 
+     <h1>¡Bienvenid@ a tu inventario!</h1>
+    <p>El lugar donde podrás consultar el inventario disponible para tus siguientes creaciones, así como, ver los pedidos realizados.  </p>
+ <br>
+</div>
+<div style="background-color: rgb(173, 225, 237); color: rgb(67, 55, 41);">
+    <h2>Inventario</h2>
+    <hr>
+    <p>Recuerda renovar tu inventario a tiempo y verificar el estado de los alimentos.</p>
+
+    
+
+    <h3>Sabores pan</h3>
+
+    <div id="columnas">
+        <li>Vainilla.................5kg</li>
+        <li>Chocolate............15kg</li>
+        <li>Fresa..................15kg</li>
+        <li>Naranja..............10kg</li>
+        <li>Limón..................20kg</li>
+        <li>Nuez...................20kg</li>
+ 
+   </div>
+
+
+    <h3>Cremas de relleno</h3>
+
+    <div id="columnas">
+        <li>Tres leches...........16kg</li>
+        <li>Chocolate.............7kg</li>
+        <li>Fresa..................16kg</li>
+        <li>Cajeta.................15kg</li>
+        <li>Napolitano.........8kg</li>
+        <li>Vainilla...............6kg</li>
+   </div>
+
+   <h3>Adornos</h3>
+
+   <div id="columnas">
+       <li>Rosas..................5kg</li>
+       <li>Frutas..................0kg</li>
+       <li>Marmoleado........8L</li>
+       <li>Espejo.................18L</li>
+       <li>Chocolate..........7kg</li>
+       <li>Dulces...............0kg</li>
+  </div>
+  <br> <br> 
+</div>
+<div style="background-color: rgb(255, 247, 137); color: rgb(67, 55, 41);">
+  <h2>Actualizar inventario</h2>
+  <hr>
+  <div id="columnas2">
+    <label for="saborPan">Seleccione sabor de pan</label><br>
+    <input list="saborPan">
+    <datalist id="saborPan">
+        <option value="Vainilla">
+        <option value="Chocolate">
+        <option value="Fresa">
+        <option value="Naranja">
+        <option value="Limón">
+        <option value="Nuez"></option>
+    </datalist>
+    <br><br>
+    <label for="numero1">Cantidad de pan</label><br>
+    <input type="number" id="numero1" name="numero1"><br><br>
+    <br>
+    <input type="button" id="boton1" name="boton1" value="Actualizar" onclick="alert('Bienvenidos explorers');"><br><br>
+</div>
+
+<div id="columnas2">
+    <label for="saborRelleno">Seleccione sabor relleno</label><br>
+    <input list="saborRelleno">
+    <datalist id="saborRelleno">
+        <option value="Tres leches">
+        <option value="Chocolate">
+        <option value="Fresa">
+        <option value="Cajeta">
+        <option value="Napolitano">
+        <option value="Vainilla"></option>
+    </datalist>
+    <br><br>
+    <label for="numero1">Cantidad de relleno</label><br>
+    <input type="number" id="numero1" name="numero1"><br><br>
+    <br>
+    <input type="button" id="boton1" name="boton1" value="Actualizar" onclick="alert('Actualizado');"><br><br>
+</div>
+
+<div id="columnas2">
+    <label for="Adrono">Seleccione adorno</label><br>
+    <input list="Adorno">
+    <datalist id="Adorno">
+        <option value="Rosas">
+        <option value="Frutas">
+        <option value="Marmoleado">
+        <option value="Espejo">
+        <option value="Chocolate">
+        <option value="Dulces"></option>
+    </datalist>
+    <br><br>
+    <label for="numero1">Cantidad de adornos</label><br>
+    <input type="number" id="numero1" name="numero1"><br><br>
+    <br>
+    <input type="button" id="boton1" name="boton1" value="Actualizar" onclick="alert('Actualizado');"><br><br>
+</div>
+<br>
+</div>
+<div style="background-color: rgb(213, 235, 72); color: rgb(67, 55, 41);">
+<h2>Pedidos realizados</h2>
+  <hr>
+
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Teléfono</th>
+        <th>Correo</th>
+        <th>Fecha</th>
+        <th>Descripción de pastel</th>
+        <th>Sabor  pan</th>
+        <th>Sabor relleno</th>
+        <th>Adorno</th>
+    </tr>
+    <tr>
+        <td>LuzM</td>
+        <td>5617452787</td>
+        <td>luz@gmail.com</td>
+        <td>12/04/2022</td>
+        <td>Tematica princesa</td>
+        <td>Vainilla</td>
+        <td>Fresa</td>
+        <td>Espejo</td>
+    </tr>
+    <tr>
+        <td>AylinMM</td>
+        <td>5515452787</td>
+        <td>alin@gmail.com</td>
+        <td>11/11/2022</td>
+        <td>-</td>
+        <td>Vainilla</td>
+        <td>Cajeta</td>
+        <td>Fruta</td>
+    </tr>
+</table>
+</div>
+<hr>
+<p> Pasteleando S.A. de C.V. 2022 |Tel.5617482874 | Av. México No. 55,  Alc. Coyoacán, C.P 04300 </p>
+
+
+
+</body>
+</html>

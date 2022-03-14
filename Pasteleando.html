@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleando</title> 
+    <br>
+    <style>
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #columnas{
+            column-count:3;
+            column-gap:20px;
+            column-rule:4px outset rgb(237, 105, 145);
+                }
+
+         #columnas2{
+            column-count:2;
+            column-gap:20px;
+            column-rule:3px ;
+                }    
+                
+        #columnas3{
+            column-count:3;
+            column-gap:20px;
+            column-rule:3px  ;
+                }          
+                
+  
+             
+           
+    </style>
+</head>
+<body>
+<div style="background-color: rgb(255, 164, 191); color: rgb(67, 55, 41);">
+   
+    <img style="float:left;" src="https://raw.githubusercontent.com/LuzMMartinezS/html/main/pasteleando.png" alt="Logo pastelería" width="160px" > 
+     <h1>¡Bienvenid@ a pasteleando!</h1>
+    <p>En pasteleando ofrecemos una amplia variedad de sabores y diseño para tus pasteles, haz memorable tu felicidad.  </p>
+ <br>
+</div>
+ <div class="c1" style="background-color: rgb(240, 228, 135); color: rgb(67, 55, 41);">
+    <h2 style="color:rgb(204, 60, 103)"> <center>Menú</center></h2>
+    <p ><center>Arma tu pastel eligiendo  nuestra exquisita variedad de sabores y adornos.</center></p> 
+
+    <table>
+        <tbody>
+        <tr>
+        <td>
+            <img  src="https://saboryestilo.com.mx/wp-content/uploads/2019/05/los-pasteles-mas-populares-del-mundo.jpg" alt="Pastel1" width="160px" >
+        </td>
+        <td>
+            <img  src="https://cdn2.cocinadelirante.com/sites/default/files/images/2017/06/pastelnapolitano.jpg" alt="Pastel2" width="120px" >
+        </td>
+        <td>
+            <img  src="https://encolombia.com/wp-content/uploads/2012/12/Pastel-Naranja-Recetas.jpg" alt="Pastel2" width="140px" >
+        </td>
+        <td>
+            <img  src="https://mejorconsalud.as.com/wp-content/uploads/2014/08/Pastel-de-limon.jpg" alt="Pastel2" width="130px" >
+        </td>
+
+        </tr>
+        </tbody>
+        </table>
+
+    <h3>Sabores pan</h3>
+
+    <div  id="columnas">
+        <li>Vainilla.................$150</li>
+        <li>Chocolate............$200</li>
+        <li>Fresa..................$150</li>
+        <li>Naranja..............$100</li>
+        <li>Limón..................$200</li>
+        <li>Nuez...................$200</li>
+ 
+   </div>
+
+
+    <h3 style="color:rgb(67, 55, 41)">Cremas de relleno</h3>
+
+    <div  style="background-color: rgb(240, 228, 135); color: rgb(67, 55, 41);"  id="columnas">
+        <li>Tres leches...........$50</li>
+        <li>Chocolate.............$70</li>
+        <li>Fresa..................$60</li>
+        <li>Cajeta.................$50</li>
+        <li>Napolitano.........$80</li>
+        <li>Vainilla...............$60</li>
+   </div>
+
+   <h3>Adornos</h3>
+
+   <div  id="columnas">
+       <li>Rosas..................$50</li>
+       <li>Frutas..................$80</li>
+       <li>Marmoleado......$80</li>
+       <li>Espejo...............$80</li>
+       <li>Chocolate..........$70</li>
+       <li>Dulces...............$70</li>
+  </div>
+  <br> <br> <br>
+</div>
+
+<div style="background-color: rgb(226, 187, 139);color: rgb(79, 64, 46);">
+  <h2>Haz tu pedido</h2>
+  <hr>
+  <div id="columnas2">
+    <label for="Input1"> Nombre </label>
+    <input type="text" id="Input1" name="Input1">
+    <br><br>
+    <label for="tel1">Teléfono</label>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+    <label for="correo1"> Correo </label> 
+    <input type="email" id="correo1" name="correo1"><br><br>
+    <label for="fecha"> Entrega </label> 
+    <input type="datetime-local" id="fecha2" name="fecha"><br>
+</div>
+<br>
+<label for="Input1"> Descripción general del pastel</label>
+<input type="text" id="Input2" name="Input2">
+
+<div id="columnas3">
+ 
+    <h4>Sabor</h4>
+    <input type="checkbox" id="topping1" name="topping1" value="Vainilla">
+    <label for="topping1">Vainilla</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Chocolate">
+    <label for="topping2">Chocolate</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Fresa">
+    <label for="topping3">Fresa</label><br>
+    <input type="checkbox" id="topping4" name="topping4" value="Naranja">
+    <label for="topping4">Naranja</label><br>
+    <input type="checkbox" id="topping5" name="topping5" value="Limón">
+    <label for="topping5">Limón</label><br>
+    <input type="checkbox" id="topping6" name="topping6" value="Nuez">
+    <label for="topping6">Nuez</label>
+
+    <h4>Relleno</h4>
+    <input type="checkbox" id="topping7" name="topping7" value="Tres leches">
+    <label for="topping7">Tres leches</label><br>
+    <input type="checkbox" id="topping8" name="topping8" value="Chocolate">
+    <label for="topping8">Chocolate</label><br>
+    <input type="checkbox" id="topping9" name="topping9" value="Fresa">
+    <label for="topping9">Fresa</label><br>
+    <input type="checkbox" id="topping10" name="topping10" value="Cajeta">
+    <label for="topping10">Cajeta</label><br>
+    <input type="checkbox" id="topping11" name="topping11" value="Napolitano">
+    <label for="topping11">Napolitano</label><br>
+    <input type="checkbox" id="topping12" name="topping12" value="Vainilla">
+    <label for="topping12">Vainilla</label>
+
+    <h4>Adorno</h4>
+    <input type="checkbox" id="topping13" name="topping13" value="Rosas">
+    <label for="topping13">Rosas</label><br>
+    <input type="checkbox" id="topping14" name="topping14" value="Frutas">
+    <label for="topping14">Frutas</label><br>
+    <input type="checkbox" id="topping15" name="topping15" value="Marmoleado">
+    <label for="topping15">Marmoleado</label><br>
+    <input type="checkbox" id="topping16" name="topping16" value="Espejo">
+    <label for="topping16">Espejo</label><br>
+    <input type="checkbox" id="topping17" name="topping17" value="Chocolate">
+    <label for="topping17">Chocolate</label><br>
+    <input type="checkbox" id="topping18" name="topping18" value="Dulces">
+    <label for="topping18">Dulces</label>
+
+</div>
+<br>
+<input type="submit"><br>
+</div>
+
+<hr>
+<p>Pasteleando S.A. de C.V. |Tel.5617482874 | Av. México No. 55,  Alc. Coyoacán, C.P 04300 </p>
+
+
+
+</body>
+</html>
